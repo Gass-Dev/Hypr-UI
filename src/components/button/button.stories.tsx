@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { fn } from '@storybook/test'
 import { Button } from './button'
 
 const meta: Meta<typeof Button> = {
@@ -12,8 +13,8 @@ type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
-    children: 'Button',
-    variant: 'default',
+    children: 'Cliquez-moi',
+    onClick: fn(),
   },
 }
 
